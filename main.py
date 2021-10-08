@@ -62,7 +62,7 @@ else:
 meta_dataloaders, cl_dataloader = init_dataloaders(args)
 
 
-
+print (args.dataset)
 
 
 # agent and network

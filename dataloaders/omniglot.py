@@ -16,6 +16,7 @@ def init_dataloaders(args):
     args.n_train_cls = 100
     args.n_val_cls = 10
     args.n_train_samples = args.num_shots
+    args.num_domains_pretrain =1
 
 
     args.input_size = [1,28,28]

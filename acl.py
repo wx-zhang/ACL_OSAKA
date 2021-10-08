@@ -119,7 +119,8 @@ class ACL(object):
 
 
     def train(self, task_id, dataset):
-        self.discriminator=self.get_discriminator(task_id)
+
+        self.discriminator=self.get_discriminator(args.num_domains_pretrain )
 
 
 

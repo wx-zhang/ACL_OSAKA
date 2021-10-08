@@ -63,10 +63,10 @@ def init_dataloaders(args):
 
     cl_dataset = tiered_dataset.data
     cl_ood_dataset2 = NonEpisodicTieredImagenet(args.folder, split="val").data
-    args.num_domains = len(cl_dataset.keys())
+    args.num_domains_pretrain = len(cl_dataset.keys())
     for k in cl_ood_dataset2.keys():
-        cl_ood_dataset2[k+args.num_domains] = cl_ood_dataset2.pop(k)
-    args.num_domains += len(cl_ood_dataset2)
+        cl_ood_dataset2[k+args.num_domains_pretrain] = cl_ood_dataset2.pop(k)
+    args.num_domains = args.num_domains_pretrain + len(cl_ood_dataset2)
 
     cl_ood_dataset1 = cl_ood_dataset1
     cl_ood_dataset2 = cl_ood_dataset2

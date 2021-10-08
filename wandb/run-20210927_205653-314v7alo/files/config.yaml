@@ -1,0 +1,153 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.1
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.6.13
+    start_time: 1632747413
+    t:
+      1:
+      - 1
+      2:
+      - 1
+      - 5
+      4: 3.6.13
+      5: 0.12.1
+      8:
+      - 5
+acc_threshold_interval:
+  desc: null
+  value: 0.1
+adv:
+  desc: null
+  value: 0.001
+batch_size:
+  desc: null
+  value: 5
+checkpoint:
+  desc: null
+  value: ./checkpoints/
+d_lr:
+  desc: null
+  value: 0.01
+d_units:
+  desc: null
+  value: 16
+d_wd:
+  desc: null
+  value: 0.001
+dataset:
+  desc: null
+  value: omniglot
+device:
+  desc: null
+  value: cpu
+diff:
+  desc: null
+  value: 'yes'
+e_lr:
+  desc: null
+  value: 0.1
+e_wd:
+  desc: null
+  value: 0.001
+folder:
+  desc: null
+  value: Data
+hidden_size:
+  desc: null
+  value: 16
+lam:
+  desc: null
+  value: 1
+loss_threshold_interval:
+  desc: null
+  value: 1.1
+lr_factor:
+  desc: null
+  value: 3
+lr_min:
+  desc: null
+  value: 1.0e-06
+lr_patience:
+  desc: null
+  value: 10
+model_name:
+  desc: null
+  value: ACL
+model_name_impv:
+  desc: null
+  value: ACL
+mom:
+  desc: null
+  value: 0.6
+n_steps_per_task:
+  desc: null
+  value: 1
+num_batches:
+  desc: null
+  value: 100
+num_domains:
+  desc: null
+  value: 3
+num_epochs:
+  desc: null
+  value: 5
+num_shots:
+  desc: null
+  value: 15
+num_shots_test:
+  desc: null
+  value: 5
+num_ways:
+  desc: null
+  value: 5
+orth:
+  desc: null
+  value: 0.05
+patience:
+  desc: null
+  value: 20
+prob_statio:
+  desc: null
+  value: 0.98
+s_layers:
+  desc: null
+  value: 0
+s_units:
+  desc: null
+  value: 16
+seed:
+  desc: null
+  value: 100
+task_sequence:
+  desc: null
+  value: null
+timesteps:
+  desc: null
+  value: 1000
+update_metric:
+  desc: null
+  value: loss
+verbose:
+  desc: null
+  value: false
+wandb:
+  desc: null
+  value: true
+wandb_group:
+  desc: null
+  value: ACL_module-s_loss-a+d+t
+wandb_key:
+  desc: null
+  value: db78b53cf64ca6e9912b3409ad081dd1fd898b3a
+wandb_name:
+  desc: null
+  value: train_cls_100
+wandb_project:
+  desc: null
+  value: ACL_pre-training

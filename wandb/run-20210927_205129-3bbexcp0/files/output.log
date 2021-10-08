@@ -1,0 +1,15 @@
+
+load from omniglot.npy.
+Traceback (most recent call last):
+  File "main.py", line 91, in <module>
+    appr.train(0,meta_dataloaders[0])
+  File "/Users/wenxuanzhang/Desktop/ACL_OSAKA/acl.py", line 158, in train
+    utils.log_wandb(self.train_res,i,'pre-train_train',self.wandb)
+TypeError: log_wandb() takes 3 positional arguments but 4 were given
+Num parameters in Shared       = 13.10K
+Num parameters in Private      = 37.68K,  per task = 12.56K
+Num parameters in Header       = 4.21K,  per task = 1.41K
+Num parameters in P+H          = 41.90K
+-------------------------->   Total architecture size: 55.00K parameters (220.00KB)
+Num parameters in D       = 578.0
+1.6013982772827149 25.666666666666668 1.6048856735229493 23.2

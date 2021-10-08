@@ -1,0 +1,38 @@
+2021-09-13 19:13:59,630 INFO    MainThread:86049 [wandb_setup.py:_flush():69] setting env: {}
+2021-09-13 19:13:59,630 INFO    MainThread:86049 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-09-13 19:13:59,630 INFO    MainThread:86049 [wandb_init.py:_log_setup():342] Logging user logs to /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210913_191359-12rn2lqe/logs/debug.log
+2021-09-13 19:13:59,630 INFO    MainThread:86049 [wandb_init.py:_log_setup():343] Logging internal logs to /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210913_191359-12rn2lqe/logs/debug-internal.log
+2021-09-13 19:13:59,631 INFO    MainThread:86049 [wandb_init.py:_jupyter_setup():294] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fdff8b942e8>
+2021-09-13 19:13:59,631 INFO    MainThread:86049 [wandb_init.py:init():375] calling init triggers
+2021-09-13 19:13:59,631 INFO    MainThread:86049 [wandb_init.py:init():382] wandb.init called with sweep_config: {}
+config: {}
+2021-09-13 19:13:59,631 INFO    MainThread:86049 [wandb_init.py:init():424] starting backend
+2021-09-13 19:13:59,631 INFO    MainThread:86049 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-09-13 19:13:59,644 INFO    MainThread:86049 [backend.py:ensure_launched():135] starting backend process...
+2021-09-13 19:13:59,657 INFO    MainThread:86049 [backend.py:ensure_launched():140] started backend process with pid: 86407
+2021-09-13 19:13:59,659 INFO    MainThread:86049 [wandb_init.py:init():429] backend started and connected
+2021-09-13 19:13:59,663 INFO    MainThread:86049 [wandb_run.py:_label_probe_notebook():815] probe notebook
+2021-09-13 19:13:59,664 INFO    MainThread:86049 [wandb_run.py:_label_probe_notebook():822] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2021-09-13 19:13:59,664 INFO    MainThread:86049 [wandb_init.py:init():477] updated telemetry
+2021-09-13 19:13:59,664 INFO    MainThread:86049 [wandb_init.py:init():500] communicating current version
+2021-09-13 19:14:00,861 INFO    MainThread:86049 [wandb_init.py:init():505] got version response 
+2021-09-13 19:14:00,862 INFO    MainThread:86049 [wandb_init.py:init():513] communicating run to backend with 30 second timeout
+2021-09-13 19:14:01,496 INFO    MainThread:86049 [wandb_init.py:init():540] starting run threads in backend
+2021-09-13 19:14:03,494 INFO    MainThread:86049 [wandb_run.py:_console_start():1601] atexit reg
+2021-09-13 19:14:03,494 INFO    MainThread:86049 [wandb_run.py:_redirect():1475] redirect: SettingsConsole.WRAP
+2021-09-13 19:14:03,495 INFO    MainThread:86049 [wandb_run.py:_redirect():1512] Wrapping output streams.
+2021-09-13 19:14:03,496 INFO    MainThread:86049 [wandb_run.py:_redirect():1536] Redirects installed.
+2021-09-13 19:14:03,496 INFO    MainThread:86049 [wandb_init.py:init():565] run started, returning control to user process
+2021-09-13 19:14:03,498 INFO    MainThread:86049 [wandb_run.py:_config_callback():843] config_cb None None {'dataset': 'sinusoid', 'wandb_project': None, 'wandb_name': None, 'wandb_key': None, 'num_ways': 5, 'num_shots': 5, 'num_shots_test': 15, 'num_domains': 3, 'seed': 100, 'model_name': 'ACL', 'model_name_impv': 'ACL', 'hidden_size': 8, 's_units': 16, 'd_units': 16, 's_layers': 0, 'lam': 1, 'batch_size': 25, 'num_epochs': 50, 'patience': 5, 'num_batches': 100, 'd_lr': 0.0001, 'e_lr': 0.001, 'timesteps': 10000, 'prob_statio': 0.98, 'task_sequence': None, 'n_steps_per_task': 1, 'verbose': False, 'model_config': 'Config/debug.yaml', 'deeper': 0, 'wandb_group': 'ACL_0.98', 'device': 'cpu'}
+2021-09-13 19:14:03,511 INFO    MainThread:86049 [wandb_init.py:_pause_backend():256] pausing backend
+2021-09-13 19:14:03,511 INFO    MainThread:86049 [jupyter.py:save_ipynb():298] not saving jupyter notebook
+2021-09-13 19:16:46,174 INFO    MainThread:86049 [wandb_init.py:_resume_backend():265] resuming backend
+2021-09-13 19:16:46,220 INFO    MainThread:86049 [wandb_setup.py:_flush():69] setting env: {}
+2021-09-13 19:16:46,220 INFO    MainThread:86049 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-09-13 19:16:46,220 INFO    MainThread:86049 [wandb_init.py:_log_setup():342] Logging user logs to /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210913_191646-1sgmmigb/logs/debug.log
+2021-09-13 19:16:46,220 INFO    MainThread:86049 [wandb_init.py:_log_setup():343] Logging internal logs to /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210913_191646-1sgmmigb/logs/debug-internal.log
+2021-09-13 19:16:46,221 INFO    MainThread:86049 [wandb_init.py:init():375] calling init triggers
+2021-09-13 19:16:46,221 INFO    MainThread:86049 [wandb_init.py:init():382] wandb.init called with sweep_config: {}
+config: {}
+2021-09-13 19:16:46,221 INFO    MainThread:86049 [wandb_init.py:init():397] re-initializing run, found existing run on stack: 12rn2lqe
+2021-09-13 19:16:46,221 INFO    MainThread:86049 [wandb_run.py:finish():1271] finishing run wxzhang0210/uncategorized/12rn2lqe

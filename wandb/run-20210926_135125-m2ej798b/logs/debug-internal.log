@@ -1,0 +1,95 @@
+2021-09-26 13:51:26,565 INFO    MainThread:63404 [internal.py:wandb_internal():89] W&B internal server running at pid: 63404, started at: 2021-09-26 13:51:26.565731
+2021-09-26 13:51:26,566 INFO    WriterThread:63404 [datastore.py:open_for_write():77] open: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/run-m2ej798b.wandb
+2021-09-26 13:51:26,567 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: check_version
+2021-09-26 13:51:26,568 DEBUG   SenderThread:63404 [sender.py:send():182] send: header
+2021-09-26 13:51:26,568 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: check_version
+2021-09-26 13:51:27,316 DEBUG   SenderThread:63404 [sender.py:send():182] send: run
+2021-09-26 13:51:27,319 DEBUG   SenderThread:63404 [git.py:repo():33] git repository is invalid
+2021-09-26 13:51:27,319 DEBUG   SenderThread:63404 [git.py:repo():33] git repository is invalid
+2021-09-26 13:51:27,696 INFO    SenderThread:63404 [dir_watcher.py:__init__():169] watching files in: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files
+2021-09-26 13:51:27,696 INFO    SenderThread:63404 [sender.py:_start_run_threads():743] run started: m2ej798b with start time 1632635485
+2021-09-26 13:51:27,696 DEBUG   SenderThread:63404 [sender.py:send():182] send: summary
+2021-09-26 13:51:27,697 INFO    SenderThread:63404 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-26 13:51:27,706 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: run_start
+2021-09-26 13:51:27,712 DEBUG   HandlerThread:63404 [meta.py:__init__():40] meta init
+2021-09-26 13:51:27,712 DEBUG   HandlerThread:63404 [meta.py:__init__():54] meta init done
+2021-09-26 13:51:27,712 DEBUG   HandlerThread:63404 [meta.py:probe():211] probe
+2021-09-26 13:51:27,720 DEBUG   HandlerThread:63404 [git.py:repo():33] git repository is invalid
+2021-09-26 13:51:27,720 DEBUG   HandlerThread:63404 [meta.py:_save_pip():58] save pip
+2021-09-26 13:51:27,721 DEBUG   HandlerThread:63404 [meta.py:_save_pip():72] save pip done
+2021-09-26 13:51:27,721 DEBUG   HandlerThread:63404 [meta.py:_save_conda():79] save conda
+2021-09-26 13:51:28,701 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/requirements.txt
+2021-09-26 13:51:28,702 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/conda-environment.yaml
+2021-09-26 13:51:28,702 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/wandb-summary.json
+2021-09-26 13:51:29,914 DEBUG   HandlerThread:63404 [meta.py:_save_conda():87] save conda done
+2021-09-26 13:51:29,914 DEBUG   HandlerThread:63404 [meta.py:probe():249] probe done
+2021-09-26 13:51:29,917 DEBUG   SenderThread:63404 [sender.py:send():182] send: files
+2021-09-26 13:51:29,917 INFO    SenderThread:63404 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-09-26 13:51:29,921 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:51:29,921 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:51:30,288 DEBUG   SenderThread:63404 [sender.py:send():182] send: config
+2021-09-26 13:51:30,709 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/conda-environment.yaml
+2021-09-26 13:51:30,709 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:51:30,710 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/wandb-metadata.json
+2021-09-26 13:51:31,723 INFO    Thread-11 :63404 [upload_job.py:push():137] Uploaded file /var/folders/l6/jr7mb61x2gb6xczzn7g5j2c00000gn/T/tmpch8hrprnwandb/2y8rv1ru-wandb-metadata.json
+2021-09-26 13:51:32,721 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:51:36,732 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:51:38,743 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:51:40,754 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:51:45,295 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:51:45,296 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:51:48,793 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:51:54,823 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:51:57,081 DEBUG   SenderThread:63404 [sender.py:send():182] send: stats
+2021-09-26 13:51:57,836 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/config.yaml
+2021-09-26 13:51:58,843 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:52:00,671 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:52:00,672 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:52:12,911 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:52:16,040 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:52:16,042 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:52:16,930 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:52:28,262 DEBUG   SenderThread:63404 [sender.py:send():182] send: stats
+2021-09-26 13:52:31,454 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:52:31,454 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:52:39,046 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:52:46,814 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:52:46,815 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:52:53,111 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:52:59,139 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:52:59,537 DEBUG   SenderThread:63404 [sender.py:send():182] send: stats
+2021-09-26 13:53:01,146 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:53:02,188 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:53:02,188 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:53:17,565 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:53:17,565 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:53:30,819 DEBUG   SenderThread:63404 [sender.py:send():182] send: stats
+2021-09-26 13:53:32,946 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:53:32,947 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:53:47,354 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:53:48,332 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:53:48,333 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:53:50,370 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:53:52,381 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:54:02,033 DEBUG   SenderThread:63404 [sender.py:send():182] send: stats
+2021-09-26 13:54:03,697 DEBUG   HandlerThread:63404 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-26 13:54:03,697 DEBUG   SenderThread:63404 [sender.py:send_request():196] send_request: stop_status
+2021-09-26 13:54:04,428 INFO    Thread-8  :63404 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:54:06,164 INFO    WriterThread:63404 [datastore.py:close():281] close: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/run-m2ej798b.wandb
+2021-09-26 13:54:06,164 INFO    SenderThread:63404 [sender.py:finish():979] shutting down sender
+2021-09-26 13:54:06,164 INFO    SenderThread:63404 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-09-26 13:54:06,438 INFO    SenderThread:63404 [dir_watcher.py:finish():313] scan: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files
+2021-09-26 13:54:06,439 INFO    SenderThread:63404 [dir_watcher.py:finish():327] scan save: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/requirements.txt requirements.txt
+2021-09-26 13:54:06,439 INFO    SenderThread:63404 [dir_watcher.py:finish():327] scan save: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log output.log
+2021-09-26 13:54:06,441 INFO    SenderThread:63404 [dir_watcher.py:finish():327] scan save: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/config.yaml config.yaml
+2021-09-26 13:54:06,441 INFO    SenderThread:63404 [dir_watcher.py:finish():327] scan save: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/wandb-summary.json wandb-summary.json
+2021-09-26 13:54:06,443 INFO    SenderThread:63404 [dir_watcher.py:finish():327] scan save: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/conda-environment.yaml conda-environment.yaml
+2021-09-26 13:54:06,448 INFO    SenderThread:63404 [dir_watcher.py:finish():327] scan save: /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/wandb-metadata.json wandb-metadata.json
+2021-09-26 13:54:06,448 INFO    SenderThread:63404 [file_pusher.py:finish():177] shutting down file pusher
+2021-09-26 13:54:06,449 INFO    SenderThread:63404 [file_pusher.py:join():182] waiting for file pusher
+2021-09-26 13:54:07,944 INFO    Thread-15 :63404 [upload_job.py:push():137] Uploaded file /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/wandb-summary.json
+2021-09-26 13:54:07,946 INFO    Thread-14 :63404 [upload_job.py:push():137] Uploaded file /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/config.yaml
+2021-09-26 13:54:07,954 INFO    Thread-12 :63404 [upload_job.py:push():137] Uploaded file /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/requirements.txt
+2021-09-26 13:54:08,809 INFO    Thread-16 :63404 [upload_job.py:push():137] Uploaded file /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/conda-environment.yaml
+2021-09-26 13:54:10,559 INFO    Thread-13 :63404 [upload_job.py:push():137] Uploaded file /Users/wenxuanzhang/Desktop/ACL_OSAKA/wandb/run-20210926_135125-m2ej798b/files/output.log
+2021-09-26 13:54:11,530 INFO    MainThread:63404 [internal.py:handle_exit():76] Internal process exited

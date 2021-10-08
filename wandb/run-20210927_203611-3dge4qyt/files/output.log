@@ -1,0 +1,8 @@
+
+load from omniglot.npy.
+Num parameters in Shared       = 13.10K
+Num parameters in Private      = 37.68K,  per task = 12.56K
+Num parameters in Header       = 4.21K,  per task = 1.41K
+Num parameters in P+H          = 41.90K
+-------------------------->   Total architecture size: 55.00K parameters (220.00KB)
+Num parameters in D       = 578.0

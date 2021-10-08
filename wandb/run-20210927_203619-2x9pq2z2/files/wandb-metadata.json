@@ -1,0 +1,16 @@
+{
+    "os": "Darwin-20.4.0-x86_64-i386-64bit",
+    "python": "3.6.13",
+    "heartbeatAt": "2021-09-27T12:36:27.907209",
+    "startedAt": "2021-09-27T12:36:19.103851",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "host": "192.168.0.102",
+    "username": "wenxuanzhang",
+    "executable": "/Users/wenxuanzhang/opt/anaconda3/envs/acl/bin/python"
+}

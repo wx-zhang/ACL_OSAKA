@@ -1,0 +1,25 @@
+
+[4mReloaded modules[24m: args, dataloaders, dataloaders.sinusoid, dataloaders.baseloader, Data, Data.harmonics
+[autoreload of dataloaders.baseloader failed: Traceback (most recent call last):
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 245, in check
+    superreload(m, reload, self.old_objects)
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 410, in superreload
+    update_generic(old_obj, new_obj)
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 347, in update_generic
+    update(a, b)
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 302, in update_class
+    if update_generic(old_obj, new_obj): continue
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 347, in update_generic
+    update(a, b)
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 302, in update_class
+    if update_generic(old_obj, new_obj): continue
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 347, in update_generic
+    update(a, b)
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 302, in update_class
+    if update_generic(old_obj, new_obj): continue
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 347, in update_generic
+    update(a, b)
+  File "/Users/wenxuanzhang/opt/anaconda3/envs/acl/lib/python3.6/site-packages/IPython/extensions/autoreload.py", line 302, in update_class
+    if update_generic(old_obj, new_obj): continue
+RecursionError: maximum recursion depth exceeded
+]

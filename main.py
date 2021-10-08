@@ -66,10 +66,9 @@ meta_dataloaders, cl_dataloader = init_dataloaders(args)
 
 # agent and network
 from acl import ACL as approach
-if args.dataset == 'sinusoid' or 'omniglot':
+if args.dataset in ['sinusoid' or 'omniglot']:
     from networks import mlp_acl as network
 elif args.dataset == 'tiered_imagenet':
-    print ('from networks import alexnet_acl as network')
     from networks import alexnet_acl as network
 
 net = network.Net(args)

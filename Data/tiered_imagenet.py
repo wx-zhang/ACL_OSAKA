@@ -53,7 +53,7 @@ class NonEpisodicTieredImagenet(Dataset):
 
             print("Loading tiered-imagenet...")
             label_count = {i: (self.labels_specific == i).astype(int).sum() for i in set(self.labels_specific)}
-            cat_count = {i: len(self.labels_specific[self.labels_general==i]) for i in set(self.labels_general)}
+            cat_count = {i: len(np.unique(self.labels_specific[self.labels_general==i])) for i in set(self.labels_general)}
             print (f'number of classes for every categories: {cat_count}')
 
 

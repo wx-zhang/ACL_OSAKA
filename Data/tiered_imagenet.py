@@ -84,7 +84,7 @@ class NonEpisodicTieredImagenet(Dataset):
             del (images)
 
         else:
-            self.data = np.load(os.path.join(self.ROOT_PATH, '{}-tiered-imagenet.npy'.format(split)),
+            self.data = np.load(os.path.join(self.ROOT_PATH, '{}-tiered-imagenet-acl.npy'.format(split)),
                                 allow_pickle=True)
             print(self.data.values().size)
         print("Done")

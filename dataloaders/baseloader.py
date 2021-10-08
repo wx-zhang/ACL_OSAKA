@@ -455,7 +455,7 @@ class MultiDomainStreamDataset(torch.utils.data.Dataset):
 
         self.modes    = ['pretrain', 'ood1', 'ood2']
         self.modes_id = [0, 1, 2]
-        self.subdomain = 
+
         self.probs    = np.array([prob_pretrain, prob_ood1, prob_ood2])
         self.data     = [train_data, test_data, ood_data]
         self.p_statio = args.prob_statio

@@ -49,7 +49,7 @@ def parse_args():
     group = parser.add_argument_group("General Settings")
     #group.add_argument('--mode', default='train', choices=['train', 'test'])
     datasets = ['sinusoid', 'omniglot','tiered_imagenet']
-    group.add_argument('--dataset', choices=datasets, default='omniglot', help='Name of the dataset.')  
+    group.add_argument('--dataset', choices=datasets, default='tiered_imagenet', help='Name of the dataset.')  
     group.add_argument('--folder',         type=str, default='../Dataset', help='Path to the folder the data is downloaded to.')
     group.add_argument('--wandb', type=bool, default=True,   help=' If None, no wandb logging')
 

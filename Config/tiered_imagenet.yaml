@@ -1,0 +1,6 @@
+!!python/object:argparse.Namespace
+# model
+hidden_size: 256
+
+
+e_lr: 1.5

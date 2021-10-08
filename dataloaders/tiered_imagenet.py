@@ -18,7 +18,7 @@ def init_dataloaders(args):
     args.n_train_cls = 100
     args.n_val_cls = 100
     args.n_train_samples = 500
-    args.num_domain = 34
+
 
     args.input_size = [3,84,84]
     tiered_dataset = NonEpisodicTieredImagenet(args.folder, split="train")
@@ -63,10 +63,10 @@ def init_dataloaders(args):
 
     cl_dataset = tiered_dataset.data
     cl_ood_dataset2 = NonEpisodicTieredImagenet(args.folder, split="val").data
-    args.num_domain = len(cl_dataset.keys())
+    args.num_domains = len(cl_dataset.keys())
     for k in cl_ood_dataset2.keys():
         cl_ood_dataset2[k+args.num_domain] = cl_ood_dataset2.pop(k)
-
+    args.num_domains += len(cl_ood_dataset2)
 
     cl_ood_dataset1 = cl_ood_dataset1
     cl_ood_dataset2 = cl_ood_dataset2

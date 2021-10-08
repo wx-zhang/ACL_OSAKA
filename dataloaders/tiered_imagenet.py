@@ -75,7 +75,7 @@ def init_dataloaders(args):
 
  
 
-    del Omniglot_dataset, meta_train_dataset, meta_val_dataset, meta_test_dataset,\
+    del tiered_dataset, meta_train_dataset, meta_val_dataset, meta_test_dataset,\
      cl_dataset, cl_ood_dataset1, cl_ood_dataset2,\
      meta_train_dataloader, meta_val_dataloader, meta_test_dataloader
 

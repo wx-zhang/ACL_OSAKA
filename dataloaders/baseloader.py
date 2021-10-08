@@ -231,7 +231,10 @@ class MultiDomainMetaDataset(torch.utils.data.Dataset):
 
 
     def __len__(self):
-        return self.data.size(0)
+        nn = 0
+        for v in self.data.values():
+            nn += len(v)
+        return nn
 
 
     def __getitem__(self, index):

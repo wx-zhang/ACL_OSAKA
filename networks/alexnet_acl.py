@@ -73,7 +73,7 @@ class Private(torch.nn.Module):
 
 
         self.task_out = torch.nn.ModuleList()
-        for _ in range(self.num_tasks):
+        for _ in range(self.num_domains):
             self.conv = torch.nn.Sequential()
             self.conv.add_module('conv1',torch.nn.Conv2d(self.nchannel, hiddens[0], kernel_size=self.size // 8))
             self.conv.add_module('relu1', torch.nn.ReLU(inplace=True))

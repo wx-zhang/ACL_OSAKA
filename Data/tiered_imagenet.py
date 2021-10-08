@@ -86,7 +86,7 @@ class NonEpisodicTieredImagenet(Dataset):
         else:
             self.data = np.load(os.path.join(self.ROOT_PATH, '{}-tiered-imagenet.npy'.format(split)),
                                 allow_pickle=True)
-            print(self.data.size())
+            print(self.data.values().size)
         print("Done")
 
     # def from_hierarchy(self, start, end):

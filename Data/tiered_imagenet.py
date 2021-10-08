@@ -39,9 +39,7 @@ class NonEpisodicTieredImagenet(Dataset):
             #         "Please download tiered-imagenet as indicated in https://github.com/renmengye/few-shot-ssl-public")
             #     raise IOError
             
-            _ROOT_PATH = '/mnt/datasets/public/research/tiered-imagenet' 
-            # img_path = os.path.join(self.ROOT_PATH, "%s_images_png.pkl" % (split))
-            # label_path = os.path.join(self.ROOT_PATH, "%s_labels.pkl" % (split))
+            _ROOT_PATH = os.path.join(args.folder,'tiered-imagenet' )
             img_path = os.path.join(_ROOT_PATH, "%s_images_png.pkl" % (split))
             label_path = os.path.join(_ROOT_PATH, "%s_labels.pkl" % (split))
             self.transforms = transforms

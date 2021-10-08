@@ -48,8 +48,8 @@ class NonEpisodicTieredImagenet(Dataset):
 
             with open(label_path, 'rb') as infile:
                 self.labels = pkl.load(infile, encoding="bytes")
-                self.labels_specific = self.labels[b"label_specific"]
-                self.labels_general = self.labels[b"label_general"]
+                self.labels_specific = self.labels["label_specific"]
+                self.labels_general = self.labels["label_general"]
 
             print("Loading tiered-imagenet...")
             label_count = {i: (self.labels_specific == i).astype(int).sum() for i in set(self.labels_specific)}

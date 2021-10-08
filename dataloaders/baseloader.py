@@ -246,7 +246,7 @@ class MultiDomainMetaDataset(torch.utils.data.Dataset):
                 break
             else:
                 domain_count += 1
-                domain_index -= domain_context[i]
+                domain_index -= self.domain_context[i]
 
         domain_id = self.domain[domain_count]
         data = self.data[domain_id][domain_index]

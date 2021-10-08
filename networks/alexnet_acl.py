@@ -15,7 +15,7 @@ class Shared(torch.nn.Module):
         self.num_ways=args.num_ways
         self.hidden_size = args.hidden_size
 
-        if args.experiment == 'tiered_imagenet':
+        if args.dataset == 'tiered_imagenet':
             hiddens = [64, 128, 256, 512, 512, 512]
         else:
             raise NotImplementedError
@@ -65,7 +65,7 @@ class Private(torch.nn.Module):
         self.num_domains = args.num_domains
         self.device = args.device
 
-        if args.experiment ==  'tiered_imagenet':
+        if args.dataset ==  'tiered_imagenet':
             hiddens=[16,16]
             flatten=3600
         else:

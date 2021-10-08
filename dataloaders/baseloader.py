@@ -250,7 +250,7 @@ class MultiDomainMetaDataset(torch.utils.data.Dataset):
 
         domain_id = self.domain[domain_count]
         data = self.data[domain_id][domain_index]
-        samples_in_class = self.data.shape[1]
+        samples_in_class = data.shape[1]
         #print (self.data.shape)
         train_idx = torch.Tensor( self.n_shots)
         train_idx = np.random.choice(samples_in_class, self.n_shots, replace=False)

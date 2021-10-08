@@ -112,7 +112,6 @@ class Net(torch.nn.Module):
         self.args=args
 
         self.hidden1 = args.head_units
-        print (self.hidden1)
         self.hidden2 = args.head_units//2
 
         self.shared = Shared(args)

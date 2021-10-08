@@ -52,7 +52,6 @@ else:
 # dataloader
 if args.dataset == 'sinusoid':
     from dataloaders.sinusoid import init_dataloaders
-
 elif args.dataset == 'omniglot':  
     from dataloaders.omniglot import init_dataloaders
 elif args.dataset == 'tiered_imagenet':
@@ -72,6 +71,7 @@ if args.dataset == 'sinusoid' or 'omniglot':
     from networks import mlp_acl as network
 elif args.dataset == 'tiered_imagenet':
     from networks import alexnet_acl as network
+    print ('from networks import alexnet_acl as network')
 net = network.Net(args)
 net = net.to(args.device)
 net.print_model_size(wandb=wandb)

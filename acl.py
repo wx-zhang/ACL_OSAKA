@@ -351,7 +351,7 @@ class ACL(object):
                 
             # data to device
             x = data.to(device=self.device)
-            task_id = np.argmax(np.bincount(tt.numpy()))
+            task_id = np.argmax(np.bincount(tt.cpu().numpy()))
 
             
             

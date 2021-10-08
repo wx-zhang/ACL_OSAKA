@@ -210,6 +210,8 @@ class ACL(object):
             tt = tt[0]
             td = td[0]
             mode = mode[0]
+
+
             
             self.model.train()
             self.discriminator.train()
@@ -334,7 +336,7 @@ class ACL(object):
         for count, (data, target, tt, td) in enumerate(train_loader):
             
 
-            
+            task_id = np.argmax(np.bincount(tt.numpy()))
             if self.is_classification_task:
                 data = data.view(data.shape[0]*data.shape[1],data.shape[2],data.shape[3],data.shape[4])
                 target = target.view(-1)
@@ -349,6 +351,7 @@ class ACL(object):
                 
             # data to device
             x = data.to(device=self.device)
+            task_id = np.argmax(np.bincount(tt.numpy()))
 
             
             

@@ -2,10 +2,10 @@
 
 folder: '../Data'
 
-
+num_shots: 50
 
 # model
 hidden_size: 256
 head_units: 128
 
-e_lr: 1.5
+e_lr: 0.01

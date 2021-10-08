@@ -152,7 +152,7 @@ def parse_args():
     if args.dataset == 'sinusoid':
         args.model_config = f"Config/debug.yaml"
     else:
-        args.model_config = f'Config/{args.dataset}'
+        args.model_config = f'Config/{args.dataset}.yaml'
 
     # if args.model_name != "ours" and args.model_config == "Config/ours.yaml":
     #     # use the custom config file if a different model_name was passed.
@@ -167,7 +167,7 @@ def parse_args():
         args_dict = vars(args)
         args_dict.update(vars(file_args))
         args = argparse.Namespace(**args_dict)
-    except AttributeError:
+    except  FileNotFoundError:
         pass
 
 

@@ -336,7 +336,7 @@ class ACL(object):
         for count, (data, target, tt, td) in enumerate(train_loader):
             
 
-            task_id = np.argmax(np.bincount(tt.view(-1).cpu().numpy()))
+            
             if self.is_classification_task:
                 data = data.view(data.shape[0]*data.shape[1],data.shape[2],data.shape[3],data.shape[4])
                 target = target.view(-1)
@@ -348,7 +348,7 @@ class ACL(object):
                 y = target.to(device=self.device, dtype=torch.float32)
                 tt = tt.to(device=self.device)
                 
-                
+            task_id = np.argmax(np.bincount(tt.view(-1).cpu().numpy()))    
             # data to device
             x = data.to(device=self.device)
 

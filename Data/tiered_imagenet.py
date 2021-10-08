@@ -80,12 +80,12 @@ class NonEpisodicTieredImagenet(Dataset):
                     cls_idx = cat_label_count[cat].index(label)
                     self.data[cat][cls_idx, index, ...] = torch.from_numpy(np.transpose(self.__decode(im).resize((self.h, self.w),Image.NEAREST), [2,0,1]))
                     label_count[label] += 1
-            np.save(os.path.join(self.ROOT_PATH,'%s-tiered-imagenet-acl' % (split)), self.data.data.numpy(),allow_pickle=True)
+            np.save(os.path.join(self.ROOT_PATH,'%s-tiered-imagenet-acl' % (split)), self.data,allow_pickle=True)
             del (images)
 
         else:
-            self.data = torch.from_numpy(np.load(os.path.join(self.ROOT_PATH, '{}-tiered-imagenet.npy'.format(split)),
-                                allow_pickle=True))
+            self.data = np.load(os.path.join(self.ROOT_PATH, '{}-tiered-imagenet.npy'.format(split)),
+                                allow_pickle=True)
             print(self.data.size())
         print("Done")
 

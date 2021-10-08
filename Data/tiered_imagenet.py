@@ -72,7 +72,7 @@ class NonEpisodicTieredImagenet(Dataset):
                 if index == min_count:
                     continue
                 else:
-                    self.data[cat][label, index, ...] = torch.from_numpy(np.transpose(self.__decode(im).resize((self.h, self.w),Image.NEAREST), [2,0,1]))
+                    self.data[cat][label_count[label], index, ...] = torch.from_numpy(np.transpose(self.__decode(im).resize((self.h, self.w),Image.NEAREST), [2,0,1]))
                     label_count[label] += 1
             np.save(os.path.join(self.ROOT_PATH,'%s-tiered-imagenet-acl' % (split)), self.data.data.numpy(),allow_pickle=True)
             del (images)

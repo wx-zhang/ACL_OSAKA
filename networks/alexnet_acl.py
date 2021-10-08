@@ -59,7 +59,7 @@ class Private(torch.nn.Module):
     def __init__(self, args):
         super(Private, self).__init__()
 
-        self.nchannel,self.size,_=args.inputsize
+        self.nchannel,self.size,_=args.input_size
         self.num_ways=args.num_ways
         self.hidden_size = args.hidden_size
         self.num_domains = args.num_domains
@@ -104,7 +104,7 @@ class Net(torch.nn.Module):
 
     def __init__(self, args):
         super(Net, self).__init__()
-        self.nchannel,size,_=args.inputsize
+        self.nchannel,size,_=args.input_size
         self.num_ways=args.num_ways
         self.hidden_size = args.hidden_size
         self.num_domains = args.num_domains

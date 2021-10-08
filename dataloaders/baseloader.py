@@ -224,7 +224,7 @@ class MultiDomainMetaDataset(torch.utils.data.Dataset):
         self.all_classes = np.arange(n_classes)
 
         self.data        = data
-        self.domain      = data.keys()
+        self.domain      = list(data.keys())
         self.domain_context = [len(self.data[i]) for i in self.domain]
         self.n_domains = len(data.keys())
         self.memory = {}

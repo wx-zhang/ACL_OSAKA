@@ -25,9 +25,6 @@ if torch.cuda.is_available():
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-args.wandb_project = 'ACL_pre-training'
-args.wandb_name = 'train_cls_100'
-args.wandb_group = 'ACL_module-s+p_loss-t'
 args.wandb = False
 # log
 if args.wandb:

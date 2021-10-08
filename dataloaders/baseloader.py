@@ -436,7 +436,7 @@ class MultiDomainStreamDataset(torch.utils.data.Dataset):
 
         train_data : Array of (x,) pairs, one for each class. Contains the SAME
             classes used during (meta) training, but different samples.
-        test_data  : Array of (x,) pairs, one for each class. These are DIFFERENT
+        test_data  : Array of (x,) pairs, one for eacsh class. These are DIFFERENT
             classes from the ones used during (meta) training.
         n_way      : number of classes per task at cl-test time
         n_shots    : number of samples per classes at cl-test time

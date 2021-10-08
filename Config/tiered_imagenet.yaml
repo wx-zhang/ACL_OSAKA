@@ -1,4 +1,9 @@
 !!python/object:argparse.Namespace
+
+folder: '../Data'
+
+
+
 # model
 hidden_size: 256
 

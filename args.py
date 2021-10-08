@@ -74,6 +74,7 @@ def parse_args():
     group.add_argument('--d_units', type=int, default=16, help='number of hidden units of every hidden layers in discriminator')
     group.add_argument('--s_layers', type=int, default=0, help='number of layers in shared module')
     group.add_argument('--lam', type=float, default=1, help='diff loss lambda')
+    group.add_argument('--head_units',type=int,default=16, help='number of units in the first layer of header')
 
     # group.add_argument('-nclml', '--no_cl_meta_learning',  type=int,   default=0,     help='turn off meta-learning at cl time')
     # group.add_argument('--freeze_visual_features',         type=int,   default=0,     help='for MRCL, freeze all conv layers at cl time')

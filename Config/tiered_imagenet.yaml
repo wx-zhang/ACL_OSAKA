@@ -6,6 +6,6 @@ folder: '../Data'
 
 # model
 hidden_size: 256
-
+head_units: 128
 
 e_lr: 1.5

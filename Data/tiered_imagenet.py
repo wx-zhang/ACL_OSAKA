@@ -66,18 +66,18 @@ class NonEpisodicTieredImagenet(Dataset):
 
 
             label_count = {i: 0 for i in set(self.labels_specific)}
-            cat_count = {i:[]  for i in set(self.labels_general)}
+            cat_label_count = {i:[]  for i in set(self.labels_general)}
             for im, label, cat in zip(images, self.labels_specific,self.labels_general):
                 if cat not in self.data.keys():
                     self.data[cat] = torch.zeros( cat_count[cat], min_count, self.c, self.h, self.w, dtype=torch.uint8)
-                if label not in cat_count[cat]:
-                    cat_count[cat].append(label)
+                if label not in cat_label_count[cat]:
+                    cat_label_count[cat].append(label)
 
                 index = label_count[label]
                 if index == min_count:
                     continue
                 else:
-                    cls_idx = cat_count[cat].index(label)
+                    cls_idx = cat_label_count[cat].index(label)
                     self.data[cat][cls_idx, index, ...] = torch.from_numpy(np.transpose(self.__decode(im).resize((self.h, self.w),Image.NEAREST), [2,0,1]))
                     label_count[label] += 1
             np.save(os.path.join(self.ROOT_PATH,'%s-tiered-imagenet-acl' % (split)), self.data.data.numpy(),allow_pickle=True)
